@@ -5,22 +5,22 @@ source $(dirname $0)/var.sh
 
 FLAGS=(
   "${FFMPEG_CONFIG_FLAGS_BASE[@]}"
-  --enable-gpl            # required by x264
-  --enable-nonfree        # required by fdk-aac
-  --enable-zlib           # enable zlib
-  --enable-libx264        # enable x264
-  --enable-libx265        # enable x265
-  --enable-libvpx         # enable libvpx / webm
-  --enable-libwavpack     # enable libwavpack
-  --enable-libmp3lame     # enable libmp3lame
-  --enable-libfdk-aac     # enable libfdk-aac
-  --enable-libtheora      # enable libtheora
-  --enable-libvorbis      # enable libvorbis
-  --enable-libfreetype    # enable freetype
-  --enable-libopus        # enable opus
-  --enable-libwebp        # enable libwebp
-  --enable-libass         # enable libass
-  --enable-libfribidi     # enable libfribidi
+  --disable-gpl            # required by x264
+  --disable-nonfree        # required by fdk-aac
+  --disable-zlib           # enable zlib
+  --disable-libx264        # enable x264
+  --disable-libx265        # enable x265
+  --disable-libvpx         # enable libvpx / webm
+  --disable-libwavpack     # enable libwavpack
+  --disable-libmp3lame     # enable libmp3lame
+  --disable-libfdk-aac     # enable libfdk-aac
+  --disable-libtheora      # enable libtheora
+  --disable-libvorbis      # enable libvorbis
+  --disable-libfreetype    # enable freetype
+  --disable-libopus        # enable opus
+  --disable-libwebp        # enable libwebp
+  --disable-libass         # enable libass
+  --disable-libfribidi     # enable libfribidi
   # --enable-libaom         # enable libaom
 )
 echo "FFMPEG_CONFIG_FLAGS=${FLAGS[@]}"
