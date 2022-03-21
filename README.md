@@ -4,6 +4,7 @@ FFmpeg.wasm Core
 # My custom
 
 - Eliminate thirdparty libraries not to include patent.
+- Enable WORKERFS file system of emscripten to process large mp4 file.
 
 # Original descriptions
 
